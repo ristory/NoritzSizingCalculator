@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- I just want to say Hi to you. Have a wonderful day.  
+              _____$$$$_________$$$$
+              ___$$$$$$$$_____$$$$$$$$
+              _$$$$$$$$$$$$_$$$$$$$$$$$$
+              $$$$$$$$$$$$$$$$$$$$$$$$$$$
+              $$$$$$$$$$$$$$$$$$$$$$$$$$$
+              _$$$$$$$$$$$$$$$$$$$$$$$$$
+              __$$$$$$$$$$$$$$$$$$$$$$$
+              ____$$$$$$$$$$$$$$$$$$$
+              _______$$$$$$$$$$$$$
+              __________$$$$$$$
+              ____________$$$
+              _____________$
+-->
+<html>
+
+<head>
+    <title>Noritz Sizing Calculator</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Noritz Sizing Calculator" />
+    <meta name="keywords" content="Noritz, Heater, Sizing, Calculator" />
+    <meta name="author" content="Hoang Cao" />
+
+    <!-- Bootstrap CDN Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Overpass|Signika" rel="stylesheet">
+    <!-- Ionic Framework for button icon -->
+    <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- Awesome Framework for thermometer icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My style-->
+    <link href="./assets/css/wcs.css" rel="stylesheet" type="text/css" />
+    <!-- Favicon-->
+    <link rel="icon" href="./assets/images/PIGGY.png" type="image/gif">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- Our brand / logo -->
+        <a class="navbar-brand img-fluid" href="index.html">
+            <img src="./assets/images/NoritzLogo.png" id="avatar-img" alt="Noritz logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+
+                <!-- The links of our navbar -->
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href="">RESIDENTIAL</a>
+                </li>
+
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href="">COMMERCIAL</a>
+                </li>
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href="">FOR PROFESSIONAILS</a>
+                </li>
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href="">PRODUCTS & ACCESSORIES</a>
+                </li>
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href="">ABOUT US</a>
+                </li>
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" href=""><strong>HOW TO BUY</strong></a>
+                </li>
+
+
+                <li class="nav-item active PageName">
+                    <a class="nav-link navigation" target="_blank" href=""></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="bg text-center align-self-center">
+
+        </div>
+
+        <section class="mt-5 wow fadeIn">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+
+                    <img src="./assets/images/Noritz02.jpg" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="mb-3 text-center"><strong>GET STARTED ON YOUR CUSTOM COMMERCIAL SOLUTION</strong></h3>
+                    <hr>
+                    <strong>Water heating for the future.</strong>
+                    <br>
+                    <p>Noritz has been an innovator in the water heating industry for over 60 years.
+                        We introduced the first modern, electronically controlled tankless water heaters
+                        in 1981 and we remain the leader in energy savings and superior hot water delivery today</p>
+                    <!-- Main heading -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+
+        <div class="first text-center" id="accordion">
+            <a data-toggle="collapse" href="#collapseOne">
+                <h1>1. APPLICATION</h1>
+            </a>
+            <p>Choose your application to get specific sizing for your installation</p>
+        </div>
+
+
+        <div id="accordion">
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/Noritz04.jpg" class="img-fluid z-depth-1-half" alt="">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <h4>Application*</h4>
+                        <select id="inputState" class="form-control">
+                            <option selected>Hospital</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Application Type</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="application" id="Tankless"
+                                value="option1" checked>
+                            <label class="form-check-label" for="application1">
+                                Tankless Only
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="application" id="Storage"
+                                value="option2">
+                            <label class="form-check-label" for="application2">
+                                Tankless with Storage
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="application" id="Both1" value="option3">
+                            <label class="form-check-label" for="application3">
+                                Both
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+
+                        <h4>Condensing / Non Condensing</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condensing" id="Tankless" value="option1"
+                                checked>
+                            <label class="form-check-label" for="condensing1">
+                                Tankless Only
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condensing" id="Storage" value="option2">
+                            <label class="form-check-label" for="condensing2">
+                                Tankless with Storage
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condensing" id="Both1" value="option3">
+                            <label class="form-check-label" for="condensing3">
+                                Both
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="row"></div>
+                        <h4>City</h4>
+
+                        <input id="city" class="input" name="city" type="text" value="" size="30" /> <br />
+
+
+                        <h4>State</h4>
+
+                        <input id="state" class="input" name="state" type="text" value="" size="30" /> <br />
+
+
+                        <h4>Zipcode*</h4>
+
+                        <input id="zipcode" class="input" name="zipcode" type="number" size="30" /> <br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="second text-center" id="accordion">
+        <a data-toggle="collapse" href="#collapseTwo">
+            <h1>2. INFORMATION</h1>
+        </a>
+        <p>helps gain a better understanding of the demands of your install</p>
+    </div>
+
+
+    <div id="accordion">
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <i class="fa fa-thermometer"></i>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <p><strong>Set Point Temperature</strong></p>
+                            <p>The set point temperature is the temperature the heater will be set at.
+                                The heater should be set at the temperature required to met the hot water demand.
+                                It multiple temperatures are</p>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <form>
+                                <input type="number" id="number" value="120"/>
+
+                                <button type="button"  class="value-button" id="increase" onclick="increaseValue()"
+                                    value="Increase Value">+</button>
+                                <button type="button"  class="value-button" id="decrease" onclick="decreaseValue()"
+                                    value="Decrease Value">-</button>
+          
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <i class="fa fa-thermometer"></i>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <p><strong>Ground Water Temperature</strong></p>
+                            <p>The incoming temperature of the local water supply. For sizing purposes,
+                                the temperature should be estimated for the coldest time of the year.
+                            </p>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <i class="fa fa-thermometer"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="third text-center" id="accordion">
+        <a data-toggle="collapse" href="#collapseThree">
+            <h1>3. NORITZ RECOMMENDATIONS</h1>
+        </a>
+        <p>Choose your application to get specific sizing for your installation</p>
+    </div>
+
+
+    <div id="accordion">
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+
+                    <img src="./assets/images/Noritz02.jpg" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="mb-3 text-center"><strong>GET STARTED ON YOUR CUSTOM COMMERCIAL SOLUTION</strong>
+                    </h3>
+                    <hr>
+                    <strong>Water heating for the future.</strong>
+                    <br>
+                    <p>Noritz has been an innovator in the water heating industry for over 60 years.
+                        We introduced the first modern, electronically controlled tankless water heaters
+                        in 1981 and we remain the leader in energy savings and superior hot water delivery today</p>
+                    <!-- Main heading -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <img src="./assets/images/NoritzProduct01.jpg" class="img-fluid" alt="">
+
+        </div>
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <!--Content-->
+            <div class="p-4">
+
+                <div class="mb-3">
+                    <a href="">
+                        <span class="badge purple mr-1">Category 2</span>
+                    </a>
+                    <a href="">
+                        <span class="badge blue mr-1">New</span>
+                    </a>
+                    <a href="">
+                        <span class="badge red mr-1">Bestseller</span>
+                    </a>
+                </div>
+
+                <p class="lead">
+                    <span class="mr-1">
+                        <del>$200</del>
+                    </span>
+                    <span>$100</span>
+                </p>
+
+                <h1 class="font-weight-bold">NCC199CDV</h1>
+
+                <p class="lead font-weight-bold">Description</p>
+
+                <p>GQ-C3259WZ-FF US NG | GQ-C3259WZ-FF US LP</p>
+                <p>COMMON VENTING CAPABILITY</p>
+                <p>98 PERCENT EFFICIENCY</p>
+                <p>MINIMUM 18,000 TO MAX 199,000 BTUh</p>
+                <p> 0.29 to 11.1 GPM</p>
+
+
+
+            </div>
+            <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+    </div>
+
+    <div class="row get mx-auto d-block">
+        <img src="./assets/images/Noritz03.jpg" class="get mx-auto d-block" alt="Noritz logo">
+    </div>
+    <h1 class="banner text-center">GET STARTED TODAY</h1>
+
+    <div class="container-fluid text-center">
+        <button type="button" class="btn btn-danger">CONTACT ME FOR A CONSULTATION
+
+        </button>
+    </div>
+    <div class="row">
+        <div id="footer" class="col-sm-12 text-center">
+            <p>© 2019 Noritz. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./assets/js/wcs.js"></script>
+    </div>
+</body>
+
+</html>
