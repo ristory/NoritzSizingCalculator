@@ -19,6 +19,11 @@ hr
    height:100%;
 }
 
+.btn-social-icon
+{
+   color:white;
+}
+
 .bg {
    /* The image used */
    background: url(../images/Noritz01.jpg);
@@ -99,9 +104,12 @@ color: #e74c3c ;
 
 #footer
 {
-color: black;
+color: white;
 }
-
+.address p
+{
+   margin:0;
+}
  .logo
  {
    width: 100px;
@@ -127,6 +135,8 @@ color: black;
 .jumbotron
 {
    color:white;
+   margin:0;
+   padding: 20px;
 }
 
 
