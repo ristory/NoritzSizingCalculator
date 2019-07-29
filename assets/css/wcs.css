@@ -3,6 +3,13 @@ hr
    border: 4px solid grey;
 }
 
+   border: 3px solid grey;
+}
+
+#fixtures
+{
+   color:red;
+}
 .navbar
 {
    height: 80px;
@@ -49,6 +56,16 @@ hr
    box-shadow: 2px 2px 1px grey;
 }
 
+h1
+{
+   letter-spacing: 15px;
+}
+
+h2
+{
+   color:red;
+}
+
 h3
 {
    background-color:red;
@@ -60,6 +77,15 @@ h3
 h4
 {
    color:red;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
+  width:100%;
 }
 
 .profile:hover, .navigation:hover
