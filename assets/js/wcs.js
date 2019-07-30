@@ -21,3 +21,21 @@ function openNav() {
     value--;
     document.getElementById('number').value = value;
   }
+
+$("#bootstrapForm").submit(function(event) {
+
+  // make selected form variable
+  var vForm = $(this);
+  
+  if (vForm[0].checkValidity() === false) {
+    event.preventDefault()
+    event.stopPropagation()
+  } else {
+   
+    alert("your form is valid and ready to send");
+    
+  }
+  
+  vForm.addClass('was-validated');
+  
+});
