@@ -60,6 +60,16 @@ hr
    box-shadow: 2px 2px 1px grey;
 }
 
+.hidden2
+{
+   display: none;
+}
+
+.hidden3
+{
+   display: none;
+}
+
 h1
 {
    letter-spacing: 15px;

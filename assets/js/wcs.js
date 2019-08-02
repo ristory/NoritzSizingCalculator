@@ -22,6 +22,16 @@ function openNav() {
     document.getElementById('number').value = value;
   }
 
+  document.querySelector(".next").addEventListener("click", showStep2);
+  function showStep2()
+  {
+    document.querySelector(".hidden2").style.display = "block";
+  }
+
+  function showStep3()
+  {
+    document.querySelector(".hidden3").style.display = "none";
+  }
 $("#bootstrapForm").submit(function(event) {
 
   // make selected form variable
