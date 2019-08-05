@@ -27,7 +27,56 @@
 </head>
 
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2>Address</h2>
+                    <p id="address">1288 N Harbor</p>
 
+                    <h2>Phone Number</h2>
+                    <p id="phone">7148551575</p>
+
+                    <h2>Email</h2>
+                    <a href="mailto:hoangcao@mail.weber.edu">hoangcao@mail.weber.edu</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                <form novalidate="" action="" method="" id="bootstrapForm">
+                    <div class="form-group">
+                        <label class="h4 form-control-label" for="input1">City*</label>
+                        <input type="tel" placeholder="Santa Ana" pattern="[a-zA-Z\s]{3,30}" class="form-control"
+                            name="i1" id="input1" required>
+                        <div class="valid-feedback">This city looks good</div>
+                        <div class="invalid-feedback">Please enter city like santa ana</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="h4 form-control-label" for="input1">State*</label>
+                        <input type="tel" placeholder="CA" pattern="[A-Z]{2}" class="form-control" name="i2" id="input2"
+                            required>
+                        <div class="valid-feedback">This state looks good</div>
+                        <div class="invalid-feedback">Please enter state like CA</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="h4 form-control-label" for="input1">Zipcode*</label>
+                        <input type="tel" placeholder="92703" pattern="[0-9]{5}" class="form-control" name="i3"
+                            id="input3" required>
+                        <div class="valid-feedback">This zipcode looks good</div>
+                        <div class="invalid-feedback">Please enter zipcode like 92703</div>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="next btn btn-danger">Send Us</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <!-- Our brand / logo -->
         <a class="navbar-brand img-fluid" href="index.html">
@@ -150,7 +199,7 @@
                             <option>Residential</option>
                             <option>Salon</option>
                             <option>School</option>
-                            <option>Winery</option>                         
+                            <option>Winery</option>
                         </select>
                     </div>
                     <div class="col-md-3">
@@ -205,16 +254,16 @@
                             <form novalidate="" action="" method="" id="bootstrapForm">
                                 <div class="form-group">
                                     <label class="h4 form-control-label" for="input1">City*</label>
-                                    <input type="tel" placeholder="Santa Ana" pattern="[a-zA-Z\s]{3,30}" class="form-control"
-                                        name="i1" id="input1" required>
+                                    <input type="tel" placeholder="Santa Ana" pattern="[a-zA-Z\s]{3,30}"
+                                        class="form-control" name="i1" id="input1" required>
                                     <div class="valid-feedback">This city looks good</div>
                                     <div class="invalid-feedback">Please enter city like santa ana</div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="h4 form-control-label" for="input1">State*</label>
-                                    <input type="tel" placeholder="CA" pattern="[A-Z]{2}" class="form-control"
-                                        name="i2" id="input2" required>
+                                    <input type="tel" placeholder="CA" pattern="[A-Z]{2}" class="form-control" name="i2"
+                                        id="input2" required>
                                     <div class="valid-feedback">This state looks good</div>
                                     <div class="invalid-feedback">Please enter state like CA</div>
                                 </div>
@@ -255,7 +304,7 @@
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                         <div class="row">
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-2 mb-4">
                                 <i class="fa fa-thermometer"></i>
                             </div>
                             <div class="col-md-6 mb-4">
@@ -264,7 +313,7 @@
                                     The heater should be set at the temperature required to met the hot water demand.
                                     It multiple temperatures are</p>
                             </div>
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-4 mb-4">
                                 <form>
                                     <input type="number" id="number" value="120" />
 
@@ -272,7 +321,6 @@
                                         value="Increase Value">+</button>
                                     <button type="button" class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</button>
-
                                 </form>
                             </div>
                         </div>
@@ -282,8 +330,8 @@
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
                         <div class="row">
-                            <div class="col-md-3 mb-4">
-                                <i class="fa fa-thermometer"></i>
+                            <div class="col-md-2 mb-4">
+                                <i class="fa fa-home"></i>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <p><strong>Ground Water Temperature</strong></p>
@@ -291,8 +339,16 @@
                                     the temperature should be estimated for the coldest time of the year.
                                 </p>
                             </div>
-                            <div class="col-md-3 mb-4">
-                                <i class="fa fa-thermometer"></i>
+
+                            <div class="col-md-4 mb-4">
+                                <form>
+                                    <input type="number" id="number" value="120" />
+
+                                    <button type="button" class="value-button" id="increase" onclick="increaseValue()"
+                                        value="Increase Value">+</button>
+                                    <button type="button" class="value-button" id="decrease" onclick="decreaseValue()"
+                                        value="Decrease Value">-</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -315,7 +371,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Private Lavatory Sink</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -323,7 +379,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Bathtub</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -331,7 +387,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Arm Bath</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -339,7 +395,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Foot Basin</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -347,7 +403,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Hubbard Bath</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -358,7 +414,7 @@
                         <div class="col-md-3 mb-4">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Hydro Bath</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -366,7 +422,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Hdrotherapeutic Shower(1/2")</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -374,7 +430,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Hdrotherapeutic Shower(3/4")</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -382,7 +438,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Leg Bath</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -390,7 +446,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Sitz Bath</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -398,57 +454,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Mop / Utility Service Sink</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -458,7 +464,7 @@
                         <div class="col-md-3 mb-4">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Residential)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -466,7 +472,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Residential)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -474,7 +480,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Industrial-20lb)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -482,7 +488,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Industrial-25lb)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -490,7 +496,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Industrial-30lb)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -498,7 +504,57 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <p>Shower</p>
+                                    <p>Washing Machine(Industrial-35lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-40lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-50lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-60lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-80lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-90lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control" placeholder="number">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-100lb)</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <input type="text" class="form-control" placeholder="number">
@@ -744,7 +800,7 @@
     <h1 class="banner text-center">GET STARTED TODAY</h1>
 
     <div class="container-fluid text-center">
-        <button type="button" class="btn btn-danger">CONTACT ME FOR A CONSULTATION
+        <button type="button" class="btn btn-danger" onclick="openNav()" href="#">CONTACT ME FOR A CONSULTATION
 
         </button>
     </div>
