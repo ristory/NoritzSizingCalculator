@@ -1,3 +1,19 @@
+let url= "https://compare.noritz.com/api/models/NRC711-DV"
+fetch(url)
+.then(function(r)
+{
+  return r.json
+})
+.then(function(data)
+{
+  console.log(data)
+})
+.catch(function(e)
+{
+  console.error(e)
+})
+
+
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
