@@ -56,7 +56,6 @@ hr
 
 .btn-danger
 {
-   width: 400px;
    box-shadow: 2px 2px 1px grey;
 }
 
@@ -140,6 +139,11 @@ color: white;
 {
    font-size:48px;
    color:red;
+}
+
+.form-group
+{
+   margin:0;
 }
 
 .jumbotron
