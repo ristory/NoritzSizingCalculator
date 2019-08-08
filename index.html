@@ -114,7 +114,7 @@
             <!--Grid row-->
 
         </section>
-
+        <br>
         <div class="first text-center" id="accordion">
             <a data-toggle="collapse" href="#collapseOne">
                 <h1>1. APPLICATION</h1>
@@ -206,7 +206,7 @@
                                 </label>
                             </div>
                             <br>
-                           
+
                         </div>
 
                         <div class="col-sm-12 col-md-3 col-lg-3">
@@ -227,7 +227,10 @@
                                 </div> -->
 
                             <div class="form-group">
-                                <label class="h4 form-control-label" for="input1">Zipcode*</label>
+                                <label class="h4 form-control-label" for="input1">Zipcode*
+                                    <i class="fa fa-question" data-toggle="tooltip" data-html="true"
+                                    title="Zipcode is important"></i>
+                                </label>
                                 <input type="tel" placeholder="92703" pattern="[0-9]{5}" class="form-control" name="i3"
                                     id="input3" required>
                                 <div class="invalid-feedback">Please enter zipcode like 92703</div>
@@ -236,15 +239,16 @@
                             <div>
                                 <button type="submit" class="next btn btn-danger">Next</button>
                             </div>
+                            <br>
+                            <div>
+                                <button type="button" class="reset btn btn-danger">Reset</button>
+                            </div>
                         </div>
                 </form>
             </div>
         </div>
 
-    </div>
-    </div>
-    </div>
-    <br>
+    
     <div class="hidden2 step2 second text-center" id="test accordion">
         <a data-toggle="collapse" href="#collapseTwo">
             <h1>2. INFORMATION</h1>
