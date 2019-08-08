@@ -1,17 +1,17 @@
-let url= "https://compare.noritz.com/api/models/NRC711-DV"
-fetch(url)
-.then(function(r)
-{
-  return r.json
-})
-.then(function(data)
-{
-  console.log(data)
-})
-.catch(function(e)
-{
-  console.error(e)
-})
+// let url= "https://compare.noritz.com/api/models/NRC711-DV"
+// fetch(url)
+// .then(function(r)
+// {
+//   return r.json
+// })
+// .then(function(data)
+// {
+//   console.log(data)
+// })
+// .catch(function(e)
+// {
+//   console.error(e)
+// })
 
 
 function openNav() {
@@ -22,22 +22,6 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-
-  function increaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 120 : value;
-    value++;
-    document.getElementById('number').value = value;
-  }
-  
-  function decreaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 120 : value;
-    value < 1 ? value = 1 : '';
-    value--;
-    document.getElementById('number').value = value;
-  }
-
   // document.querySelector(".next").addEventListener("click", showStep2);
   
 
@@ -46,7 +30,7 @@ function openNav() {
   //   document.querySelector(".hidden3").style.display = "none";
   // }
 $("#bootstrapForm").submit(function(event) {
-
+  event.preventDefault();
   // make selected form variable
   var vForm = $(this); 
   if (vForm[0].checkValidity() === false) {
