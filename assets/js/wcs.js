@@ -33,18 +33,28 @@ $(function () {
 
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
 
-let x = document.getElementsByClassName("fixturecolumn1")
 function hideFixture1() {
+  let x = document.getElementsByClassName("fixturecolumn1")
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[i].style.display = "none";
 }
 hideFixture1();
 
+function hideFixture2() {
+  let x = document.getElementsByClassName("fixturecolumn2")
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+hideFixture2();
+
 function showCar()
 {
-  document.querySelector(".car").style.display = "block";
+  let x = document.getElementsByClassName("dairy")
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "flex";
+  }
 }
 
 showCar();
