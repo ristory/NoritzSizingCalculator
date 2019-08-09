@@ -23,8 +23,7 @@ function closeNav() {
 }
 
 document.querySelector(".reset").addEventListener("click", reset1);
-function reset1()
-{
+function reset1() {
   document.querySelector("#bootstrapForm").reset();
 }
 
@@ -32,6 +31,23 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+//document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
+
+let x = document.getElementsByClassName("fixturecolumn1")
+function hideFixture1() {
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[i].style.display = "none";
+}
+hideFixture1();
+
+function showCar()
+{
+  document.querySelector(".car").style.display = "block";
+}
+
+showCar();
 // document.querySelector(".next").addEventListener("click", showStep2);
 
 // function showStep2()

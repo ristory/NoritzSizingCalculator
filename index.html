@@ -229,7 +229,7 @@
                             <div class="form-group">
                                 <label class="h4 form-control-label" for="input1">Zipcode*
                                     <i class="fa fa-question" data-toggle="tooltip" data-html="true"
-                                    title="Zipcode is important"></i>
+                                        title="Zipcode is important"></i>
                                 </label>
                                 <input type="tel" placeholder="92703" pattern="[0-9]{5}" class="form-control" name="i3"
                                     id="input3" required>
@@ -248,508 +248,532 @@
             </div>
         </div>
 
-    
-    <div class="hidden2 step2 second text-center" id="test accordion">
-        <a data-toggle="collapse" href="#collapseTwo">
-            <h1>2. INFORMATION</h1>
-        </a>
-        <p>helps gain a better understanding of the demands of your install</p>
-    </div>
+
+        <div class="hidden2 step2 second text-center" id="test accordion">
+            <a data-toggle="collapse" href="#collapseTwo">
+                <h1>2. INFORMATION</h1>
+            </a>
+            <p>helps gain a better understanding of the demands of your install</p>
+        </div>
 
 
-    <div id="accordion">
-        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-            <div class="row">
+        <div id="accordion">
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="row">
-                        <div class="col-md-2 mb-4">
-                            <i class="fa fa-thermometer"></i>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <p><strong>Set Point Temperature</strong></p>
-                            <p>The set point temperature is the temperature the heater will be set at.
-                                The heater should be set at the temperature required to met the hot water demand.
-                                It multiple temperatures are</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <form>
-                                <input type="number" id="number" value="120" />
-
-                                <button type="button" class="value-button" id="increase" onclick="increaseValue()"
-                                    value="Increase Value">+</button>
-                                <button type="button" class="value-button" id="decrease" onclick="decreaseValue()"
-                                    value="Decrease Value">-</button>
-                            </form>
+                    <!--Grid column-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <i class="fa fa-thermometer"></i>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p><strong>Set Point Temperature</strong></p>
+                                <p>The set point temperature is the temperature the heater will be set at.
+                                    The heater should be set at the temperature required to met the hot water demand.
+                                    It multiple temperatures are</p>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <form>
+                                    <input type="number" id="number" value="120" class="form-control" />
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--Grid column-->
+                    <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="row">
-                        <div class="col-md-2 mb-4">
-                            <i class="fa fa-home"></i>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <p><strong>Ground Water Temperature</strong></p>
-                            <p>The incoming temperature of the local water supply. For sizing purposes,
-                                the temperature should be estimated for the coldest time of the year.
-                            </p>
-                        </div>
+                    <!--Grid column-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2 form-group">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <p><strong>Ground Water Temperature</strong></p>
+                                <p>The incoming temperature of the local water supply. For sizing purposes,
+                                    the temperature should be estimated for the coldest time of the year.
+                                </p>
+                            </div>
 
-                        <div class="col-md-4 mb-4">
-                            <form>
-                                <input type="number" id="number" value="120" />
-
-                                <button type="button" class="value-button" id="increase" onclick="increaseValue()"
-                                    value="Increase Value">+</button>
-                                <button type="button" class="value-button" id="decrease" onclick="decreaseValue()"
-                                    value="Decrease Value">-</button>
-                            </form>
+                            <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+                                <form>
+                                    <input type="number" id="number" value="120" class="form-control" />
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    <!--Grid column-->
                 </div>
-                <!--Grid column-->
+
+                <hr>
+                <h1 class="text-center" id="fixtures">FIXTURES</h1>
+                <p class="text-center">Getting an accurate fixture count helps recommend the best unit for the job</p>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Shower</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row fixturecolumn1 car">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hot water hose bib (3/8")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row fixturecolumn1 car">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hot water hose bib (1/2")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Private Lavatory Sink</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Bathtub</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Arm Bath</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Foot Basin</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hubbard Bath</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Residential)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Residential)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-20lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-25lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-30lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row fixturecolumn1">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-35lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hydro Bath</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row car">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hot water hose bib (5/8")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row car">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hot water hose bib (5/8")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hdrotherapeutic Shower(1/2")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Hdrotherapeutic Shower(3/4")</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Leg Bath</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Sitz Bath</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Mop / Utility Service Sink</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-40lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-50lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-60lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-80lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-90lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <p>Washing Machine(Industrial-100lb)</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
+
+                <div class="container-fluid text-center">
+                    <button type="button" class="btn btn-danger">CALCULATE</button>
+                </div>
+                <br>
+                <br>
             </div>
+        </div>
 
-            <hr>
-            <h1 class="text-center" id="fixtures">FIXTURES</h1>
-            <p class="text-center">Getting an accurate fixture count helps recommend the best unit for the job</p>
-            <form>
+        <div class="hidden3 step3 third text-center" id="accordion">
+            <a data-toggle="collapse" href="#collapseThree">
+                <h1>3. NORITZ RECOMMENDATIONS</h1>
+            </a>
+            <p>Choose your application to get specific sizing for your installation</p>
+        </div>
+
+
+        <div id="accordion">
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h2>SUMMARY</h2>
+                        <table>
+                            <tr>
+                                <td>Application</th>
+                                <td>Hostpital</th>
+                            </tr>
+                            <tr>
+                                <td>Temperature Rise</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>Heater Set Temperature</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>Ground Water Temperature</td>
+                                <td>60</td>
+                            </tr>
+                        </table>
+                        <br>
+
+                    </div>
+
+                    <div class="col-md-8 mb-4">
+                        <table>
+                            <tr>
+                                <th>Fixture List</th>
+                                <th>Quantity</th>
+                                <th>HWFU</th>
+                                <th>Total HWFU</th>
+                                <th>GPH</th>
+                                <th>Total GPH</th>
+                            </tr>
+                            <tr>
+                                <td>Fixture List</td>
+                                <td>Quantity</td>
+                                <td>HWFU</td>
+                                <td>Total HWFU</td>
+                                <td>GPH</td>
+                                <td>Total GPH</td>
+                            </tr>
+                            <tr>
+                                <td>Fixture List</td>
+                                <td>Quantity</td>
+                                <td>HWFU</td>
+                                <td>Total HWFU</td>
+                                <td>GPH</td>
+                                <td>Total GPH</td>
+                            </tr>
+                            <tr>
+                                <td>Fixture List</td>
+                                <td>Quantity</td>
+                                <td>HWFU</td>
+                                <td>Total HWFU</td>
+                                <td>GPH</td>
+                                <td>Total GPH</td>
+                            </tr>
+                            <tr>
+                                <td>Fixture List</td>
+                                <td>Quantity</td>
+                                <td>HWFU</td>
+                                <td>Total HWFU</td>
+                                <td>GPH</td>
+                                <td>Total GPH</td>
+                            </tr>
+                            <tr>
+                                <td>Fixture List</td>
+                                <td>Quantity</td>
+                                <td>HWFU</td>
+                                <td>Total HWFU</td>
+                                <td>GPH</td>
+                                <td>Total GPH</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="text-center">RECOMMENDATION 1</h1>
                 <div class="row">
                     <div class="col-md-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Shower</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Private Lavatory Sink</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Bathtub</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Arm Bath</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Foot Basin</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Hubbard Bath</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
+
+                        <img src="./assets/images/NoritzProduct01.jpg" class="img-fluid" alt="">
+
                     </div>
 
+                    <!--Grid column-->
+
+                    <!--Grid column-->
                     <div class="col-md-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Hydro Bath</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
+
+                        <!--Content-->
+                        <div class="p-4">
+
+                            <h1 class="font-weight-bold">NCC199CDV</h1>
+
+                            <p class="lead font-weight-bold">Description</p>
+
+                            <p>GQ-C3259WZ-FF US NG | GQ-C3259WZ-FF US LP</p>
+                            <p>COMMON VENTING CAPABILITY</p>
+                            <p>98 PERCENT EFFICIENCY</p>
+                            <p>MINIMUM 18,000 TO MAX 199,000 BTUh</p>
+                            <p> 0.29 to 11.1 GPM</p>
+
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Hdrotherapeutic Shower(1/2")</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Hdrotherapeutic Shower(3/4")</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Leg Bath</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Sitz Bath</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Mop / Utility Service Sink</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
+                        <!--Content-->
+
                     </div>
+                    <!--Grid column-->
+
+                    <div class="col-md-6 mb-4">
+                        <h2>SIZING RECOMMENDATION</h2>
+                        <table>
+                            <tr>
+                                <th>Model</th>
+                                <th>Quantity</th>
+                                <th>Min BTUh</th>
+                                <th>Max BTUH</th>
+                                <th>Min Flow</th>
+                                <th>Max Flow @Temp Rise</th>
+                            </tr>
+                            <tr>
+                                <td>NCC199CDV</td>
+                                <td>9</td>
+                                <td>18,0000</td>
+                                <td>179,100</td>
+                                <td>0,5</td>
+                                <td>59.4</td>
+                            </tr>
+                        </table>
+
+                        <h2>RECOMMENDED ACCESSORIES</h2>
+                        <p>System Controller(SC-201)</p>
+                        <p>Osilation Valve (IK_WV)</p>
+
+                        <button type="button" class="btn btn-danger">GET EXCEL REPORT
+
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row">
                     <div class="col-md-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Residential)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Residential)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-20lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-25lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-30lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-35lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
+
+                        <img src="./assets/images/NoritzProduct01.jpg" class="img-fluid" alt="">
+
                     </div>
+
+                    <!--Grid column-->
+
+                    <!--Grid column-->
                     <div class="col-md-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-40lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
+
+                        <!--Content-->
+                        <div class="p-4">
+
+                            <h1 class="font-weight-bold">NCC199CDV</h1>
+
+                            <p class="lead font-weight-bold">Description</p>
+
+                            <p>GQ-C3259WZ-FF US NG | GQ-C3259WZ-FF US LP</p>
+                            <p>COMMON VENTING CAPABILITY</p>
+                            <p>98 PERCENT EFFICIENCY</p>
+                            <p>MINIMUM 18,000 TO MAX 199,000 BTUh</p>
+                            <p> 0.29 to 11.1 GPM</p>
+
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-50lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-60lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-80lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-90lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <p>Washing Machine(Industrial-100lb)</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="number">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <br>
-
-            <div class="container-fluid text-center">
-                <button type="button" class="btn btn-danger">CALCULATE</button>
-            </div>
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="hidden3 step3 third text-center" id="accordion">
-        <a data-toggle="collapse" href="#collapseThree">
-            <h1>3. NORITZ RECOMMENDATIONS</h1>
-        </a>
-        <p>Choose your application to get specific sizing for your installation</p>
-    </div>
-
-
-    <div id="accordion">
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h2>SUMMARY</h2>
-                    <table>
-                        <tr>
-                            <td>Application</th>
-                            <td>Hostpital</th>
-                        </tr>
-                        <tr>
-                            <td>Temperature Rise</td>
-                            <td>60</td>
-                        </tr>
-                        <tr>
-                            <td>Heater Set Temperature</td>
-                            <td>120</td>
-                        </tr>
-                        <tr>
-                            <td>Ground Water Temperature</td>
-                            <td>60</td>
-                        </tr>
-                    </table>
-                    <br>
-
-                </div>
-
-                <div class="col-md-8 mb-4">
-                    <table>
-                        <tr>
-                            <th>Fixture List</th>
-                            <th>Quantity</th>
-                            <th>HWFU</th>
-                            <th>Total HWFU</th>
-                            <th>GPH</th>
-                            <th>Total GPH</th>
-                        </tr>
-                        <tr>
-                            <td>Fixture List</td>
-                            <td>Quantity</td>
-                            <td>HWFU</td>
-                            <td>Total HWFU</td>
-                            <td>GPH</td>
-                            <td>Total GPH</td>
-                        </tr>
-                        <tr>
-                            <td>Fixture List</td>
-                            <td>Quantity</td>
-                            <td>HWFU</td>
-                            <td>Total HWFU</td>
-                            <td>GPH</td>
-                            <td>Total GPH</td>
-                        </tr>
-                        <tr>
-                            <td>Fixture List</td>
-                            <td>Quantity</td>
-                            <td>HWFU</td>
-                            <td>Total HWFU</td>
-                            <td>GPH</td>
-                            <td>Total GPH</td>
-                        </tr>
-                        <tr>
-                            <td>Fixture List</td>
-                            <td>Quantity</td>
-                            <td>HWFU</td>
-                            <td>Total HWFU</td>
-                            <td>GPH</td>
-                            <td>Total GPH</td>
-                        </tr>
-                        <tr>
-                            <td>Fixture List</td>
-                            <td>Quantity</td>
-                            <td>HWFU</td>
-                            <td>Total HWFU</td>
-                            <td>GPH</td>
-                            <td>Total GPH</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <hr>
-            <h1 class="text-center">RECOMMENDATION 1</h1>
-            <div class="row">
-                <div class="col-md-3 mb-4">
-
-                    <img src="./assets/images/NoritzProduct01.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 mb-4">
-
-                    <!--Content-->
-                    <div class="p-4">
-
-                        <h1 class="font-weight-bold">NCC199CDV</h1>
-
-                        <p class="lead font-weight-bold">Description</p>
-
-                        <p>GQ-C3259WZ-FF US NG | GQ-C3259WZ-FF US LP</p>
-                        <p>COMMON VENTING CAPABILITY</p>
-                        <p>98 PERCENT EFFICIENCY</p>
-                        <p>MINIMUM 18,000 TO MAX 199,000 BTUh</p>
-                        <p> 0.29 to 11.1 GPM</p>
+                        <!--Content-->
 
                     </div>
-                    <!--Content-->
+                    <!--Grid column-->
 
-                </div>
-                <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h2>SIZING RECOMMENDATION</h2>
+                        <table>
+                            <tr>
+                                <th>Model</th>
+                                <th>Quantity</th>
+                                <th>Min BTUh</th>
+                                <th>Max BTUH</th>
+                                <th>Min Flow</th>
+                                <th>Max Flow @Temp Rise</th>
+                            </tr>
+                            <tr>
+                                <td>NCC199CDV</td>
+                                <td>9</td>
+                                <td>18,0000</td>
+                                <td>179,100</td>
+                                <td>0,5</td>
+                                <td>59.4</td>
+                            </tr>
+                        </table>
 
-                <div class="col-md-6 mb-4">
-                    <h2>SIZING RECOMMENDATION</h2>
-                    <table>
-                        <tr>
-                            <th>Model</th>
-                            <th>Quantity</th>
-                            <th>Min BTUh</th>
-                            <th>Max BTUH</th>
-                            <th>Min Flow</th>
-                            <th>Max Flow @Temp Rise</th>
-                        </tr>
-                        <tr>
-                            <td>NCC199CDV</td>
-                            <td>9</td>
-                            <td>18,0000</td>
-                            <td>179,100</td>
-                            <td>0,5</td>
-                            <td>59.4</td>
-                        </tr>
-                    </table>
+                        <h2>RECOMMENDED ACCESSORIES</h2>
+                        <p>System Controller(SC-201)</p>
+                        <p>Osilation Valve (IK_WV)</p>
 
-                    <h2>RECOMMENDED ACCESSORIES</h2>
-                    <p>System Controller(SC-201)</p>
-                    <p>Osilation Valve (IK_WV)</p>
+                        <button type="button" class="btn btn-danger">GET EXCEL REPORT
 
-                    <button type="button" class="btn btn-danger">GET EXCEL REPORT
-
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 mb-4">
-
-                    <img src="./assets/images/NoritzProduct01.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 mb-4">
-
-                    <!--Content-->
-                    <div class="p-4">
-
-                        <h1 class="font-weight-bold">NCC199CDV</h1>
-
-                        <p class="lead font-weight-bold">Description</p>
-
-                        <p>GQ-C3259WZ-FF US NG | GQ-C3259WZ-FF US LP</p>
-                        <p>COMMON VENTING CAPABILITY</p>
-                        <p>98 PERCENT EFFICIENCY</p>
-                        <p>MINIMUM 18,000 TO MAX 199,000 BTUh</p>
-                        <p> 0.29 to 11.1 GPM</p>
-
+                        </button>
                     </div>
-                    <!--Content-->
 
                 </div>
-                <!--Grid column-->
-
-                <div class="col-md-6 mb-4">
-                    <h2>SIZING RECOMMENDATION</h2>
-                    <table>
-                        <tr>
-                            <th>Model</th>
-                            <th>Quantity</th>
-                            <th>Min BTUh</th>
-                            <th>Max BTUH</th>
-                            <th>Min Flow</th>
-                            <th>Max Flow @Temp Rise</th>
-                        </tr>
-                        <tr>
-                            <td>NCC199CDV</td>
-                            <td>9</td>
-                            <td>18,0000</td>
-                            <td>179,100</td>
-                            <td>0,5</td>
-                            <td>59.4</td>
-                        </tr>
-                    </table>
-
-                    <h2>RECOMMENDED ACCESSORIES</h2>
-                    <p>System Controller(SC-201)</p>
-                    <p>Osilation Valve (IK_WV)</p>
-
-                    <button type="button" class="btn btn-danger">GET EXCEL REPORT
-
-                    </button>
-                </div>
-
             </div>
         </div>
-    </div>
     </div>
 
     <hr>
