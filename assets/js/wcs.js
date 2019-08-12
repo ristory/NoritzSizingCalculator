@@ -34,7 +34,13 @@ $(function () {
 function application()
 {
   let x = document.getElementById("inputState")
-  let application = x.options[x.selectedIndex].text;
+  let application = x.options[x.selectedIndex].text.toLowerCase();
+  console.log(application)
+  let y = document.getElementsByClassName("industrial")
+  console.log(y)
+    for (let i = 0; i < y.length; i++) {
+      y[i].style.display = "flex";
+    }
 }
 
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
@@ -58,12 +64,12 @@ hideFixture2();
 function showCar()
 {
   let x = document.getElementsByClassName("dairy")
+  console.log(x)
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "flex";
   }
 }
 
-showCar();
 // document.querySelector(".next").addEventListener("click", showStep2);
 
 // function showStep2()
@@ -89,6 +95,7 @@ $("#bootstrapForm").submit(function (event) {
       document.querySelector(".hidden2").style.display = "block";
       document.querySelector(".next").disabled = true;
       application();
+      showCar();
     }
 
   }
