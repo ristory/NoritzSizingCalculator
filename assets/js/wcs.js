@@ -31,6 +31,12 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+function application()
+{
+  let x = document.getElementById("inputState")
+  let application = x.options[x.selectedIndex].text;
+}
+
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
 
 function hideFixture1() {
@@ -82,6 +88,7 @@ $("#bootstrapForm").submit(function (event) {
     function foo() {
       document.querySelector(".hidden2").style.display = "block";
       document.querySelector(".next").disabled = true;
+      application();
     }
 
   }
