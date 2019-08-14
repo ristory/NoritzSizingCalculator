@@ -152,6 +152,16 @@ color: white;
    margin:0;
 }
 
+.form-check
+{
+   padding-left:35px;
+}
+
+.finalreport
+{
+   padding-bottom: 15px;
+}
+
 .jumbotron
 {
    color:white;

@@ -1,17 +1,18 @@
-// let url= "https://compare.noritz.com/api/models/NRC711-DV"
-// fetch(url)
-// .then(function(r)
-// {
-//   return r.json
-// })
-// .then(function(data)
-// {
-//   console.log(data)
-// })
-// .catch(function(e)
-// {
-//   console.error(e)
-// })
+let url= "https://crossorigin.me/https://compare.noritz.com/api/models/NRC711-DV"
+fetch(url)
+.then(function(r)
+{
+  console.log(r)
+  return r.json
+})
+.then(function(data)
+{
+  console.log(data)
+})
+.catch(function(e)
+{
+  console.error(e)
+})
 
 
 function openNav() {
@@ -34,12 +35,13 @@ $(function () {
 function application()
 {
   let x = document.getElementById("inputState")
-  let application = x.options[x.selectedIndex].text.toLowerCase();
+  let y = x.options[x.selectedIndex].text.toLowerCase();
+  let application = y.replace(/ .*/,'');
   console.log(application)
-  let y = document.getElementsByClassName("industrial")
-  console.log(y)
-    for (let i = 0; i < y.length; i++) {
-      y[i].style.display = "flex";
+  let z = document.getElementsByClassName(application)
+  console.log(z)
+    for (let i = 0; i < z.length; i++) {
+      z[i].style.display = "flex";
     }
 }
 
@@ -60,15 +62,6 @@ function hideFixture2() {
   }
 }
 hideFixture2();
-
-function showCar()
-{
-  let x = document.getElementsByClassName("dairy")
-  console.log(x)
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "flex";
-  }
-}
 
 // document.querySelector(".next").addEventListener("click", showStep2);
 
@@ -95,7 +88,7 @@ $("#bootstrapForm").submit(function (event) {
       document.querySelector(".hidden2").style.display = "block";
       document.querySelector(".next").disabled = true;
       application();
-      showCar();
+
     }
 
   }
