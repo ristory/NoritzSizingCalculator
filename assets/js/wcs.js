@@ -1,5 +1,5 @@
-//let url= "https://compare.noritz.com/api/models/NRC711-DV"
-let url= "http://api.urbandictionary.com/v0/define?term=dog"
+let url= "https://compare.noritz.com/api/models/NRC711-DV"
+//let url= "http://api.urbandictionary.com/v0/define?term=dog"
 fetch(url)
 .then(function(r)
 {
