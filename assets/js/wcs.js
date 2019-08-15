@@ -1,13 +1,14 @@
-let url= "https://crossorigin.me/https://compare.noritz.com/api/models/NRC711-DV"
+//let url= "https://compare.noritz.com/api/models/NRC711-DV"
+let url= "http://api.urbandictionary.com/v0/define?term=dog"
 fetch(url)
 .then(function(r)
 {
-  console.log(r)
-  return r.json
+  return r.json()
 })
 .then(function(data)
 {
   console.log(data)
+  //console.log(JSON.stringify(data));
 })
 .catch(function(e)
 {
