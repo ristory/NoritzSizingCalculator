@@ -1,24 +1,7 @@
 let url = "https://compare.noritz.com/api/models/NRC711-DV"
-
 let url2 = "zipcode.xlsx";
-
-/* set up async GET request */
-var req = new XMLHttpRequest();
-req.open("GET", url2, true);
-req.responseType = "arraybuffer";
-
-req.onload = function (e) {
-  var data = new Uint8Array(req.response);
-  var workbook = XLSX.read(data, { type: "array" });
-
-  var first_sheet_name = workbook.SheetNames[0];
-  /* Get worksheet */
-  var worksheet = workbook.Sheets[first_sheet_name];
-  console.log(XLSX.utils.sheet_to_json(worksheet));
-}
-
-req.send();
-
+let api;
+let groundTemp;
 
 //let url= "http://api.urbandictionary.com/v0/define?term=dog"
 fetch(url)
@@ -55,9 +38,8 @@ function application() {
   let x = document.getElementById("inputState")
   let y = x.options[x.selectedIndex].text.toLowerCase();
   let application = y.replace(/ .*/, '');
-  console.log(application)
   let z = document.getElementsByClassName(application)
-  console.log(z)
+
   for (let i = 0; i < z.length; i++) {
     z[i].style.display = "flex";
   }
@@ -94,8 +76,8 @@ hideFixture2();
 // }
 $("#bootstrapForm").submit(function (event) {
   event.preventDefault();
-  // make selected form variable
-  var vForm = $(this);
+  // make selected form letiable
+  let vForm = $(this);
   if (vForm[0].checkValidity() === false) {
     event.preventDefault()
     event.stopPropagation()
@@ -106,6 +88,28 @@ $("#bootstrapForm").submit(function (event) {
       document.querySelector(".hidden2").style.display = "block";
       document.querySelector(".next").disabled = true;
       application();
+
+      /* set up async GET request */
+      let req = new XMLHttpRequest();
+      req.open("GET", url2, true);
+      req.responseType = "arraybuffer";
+
+      req.onload = function (e) {
+        let data = new Uint8Array(req.response);
+        let workbook = XLSX.read(data, { type: "array" });
+
+        let first_sheet_name = workbook.SheetNames[0];
+        /* Get worksheet */
+        let worksheet = workbook.Sheets[first_sheet_name];
+        api = XLSX.utils.sheet_to_json(worksheet)
+        for (let i = 0; i < api.length; i++) {
+          if (api[i].ZIPCODE.toString() === document.getElementById("inputZipcode").value) {
+            groundTemp = api[i].GROUNDTEMP;
+            console.log(groundTemp);
+          }
+        }
+      }
+      req.send();
 
     }
 
