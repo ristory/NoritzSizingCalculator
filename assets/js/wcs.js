@@ -1,21 +1,37 @@
-let url= "https://compare.noritz.com/api/models/NRC711-DV"
+let url = "https://compare.noritz.com/api/models/NRC711-DV"
+
+let url2 = "zipcode.xlsx";
+
+/* set up async GET request */
+var req = new XMLHttpRequest();
+req.open("GET", url2, true);
+req.responseType = "arraybuffer";
+
+req.onload = function (e) {
+  var data = new Uint8Array(req.response);
+  var workbook = XLSX.read(data, { type: "array" });
+
+  var first_sheet_name = workbook.SheetNames[0];
+  /* Get worksheet */
+  var worksheet = workbook.Sheets[first_sheet_name];
+  console.log(XLSX.utils.sheet_to_json(worksheet));
+}
+
+req.send();
 
 
 //let url= "http://api.urbandictionary.com/v0/define?term=dog"
 fetch(url)
-.then(function(r)
-{
-  return r.json()
-})
-.then(function(data)
-{
-  console.log(data)
-  //console.log(JSON.stringify(data));
-})
-.catch(function(e)
-{
-  console.error(e)
-})
+  .then(function (r) {
+    return r.json()
+  })
+  .then(function (data) {
+    console.log(data)
+    //console.log(JSON.stringify(data));
+  })
+  .catch(function (e) {
+    console.error(e)
+  })
 
 
 function openNav() {
@@ -35,17 +51,16 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-function application()
-{
+function application() {
   let x = document.getElementById("inputState")
   let y = x.options[x.selectedIndex].text.toLowerCase();
-  let application = y.replace(/ .*/,'');
+  let application = y.replace(/ .*/, '');
   console.log(application)
   let z = document.getElementsByClassName(application)
   console.log(z)
-    for (let i = 0; i < z.length; i++) {
-      z[i].style.display = "flex";
-    }
+  for (let i = 0; i < z.length; i++) {
+    z[i].style.display = "flex";
+  }
 }
 
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
