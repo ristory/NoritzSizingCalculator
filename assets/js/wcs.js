@@ -3,7 +3,7 @@ let url2 = "zipcode.xlsx";
 let api;
 let groundTemp;
 
-//let url= "http://api.urbandictionary.com/v0/define?term=dog"
+
 fetch(url)
   .then(function (r) {
     return r.json()
@@ -106,6 +106,7 @@ $("#bootstrapForm").submit(function (event) {
           if (api[i].ZIPCODE.toString() === document.getElementById("inputZipcode").value) {
             groundTemp = api[i].GROUNDTEMP;
             console.log(groundTemp);
+            document.getElementById("groundTemp").value = parseInt(groundTemp);
           }
         }
       }
