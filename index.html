@@ -162,45 +162,45 @@
                         <div class="col-sm-12 col-md-3 col-lg-3">
                             <h4>Application Type</h4>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="application" id="Tankless"
-                                    value="option1" checked>
+                                <input class="form-check-input" type="radio" name="application" id="tankless"
+                                    value="tankless" checked>
                                 <label class="form-check-label" for="application1">
                                     Tankless Only
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="application" id="Storage"
-                                    value="option2">
+                                <input class="form-check-input" type="radio" name="application" id="storage"
+                                    value="storage">
                                 <label class="form-check-label" for="application2">
                                     Tankless with Storage
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="application" id="Both1"
-                                    value="option3">
+                                <input class="form-check-input" type="radio" name="application" id="both1"
+                                    value="appboth">
                                 <label class="form-check-label" for="application3">
                                     Both
                                 </label>
                             </div>
                             <br>
-                            <h4>Condensing / Non Condensing</h4>
+                            <h4>Heater Type:</h4>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="condensing" id="Tankless"
-                                    value="option1">
+                                <input class="form-check-input" type="radio" name="condensing" id="condensing"
+                                    value="condensing" checked>
                                 <label class="form-check-label" for="condensing1">
-                                    Tankless Only
+                                    Condensing Only
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="condensing" id="Storage"
-                                    value="option2">
+                                <input class="form-check-input" type="radio" name="condensing" id="noncondensing"
+                                    value="noncondensing">
                                 <label class="form-check-label" for="condensing2">
-                                    Tankless with Storage
+                                    None-Condensing Only
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="condensing" id="Both2"
-                                    value="option3" checked>
+                                <input class="form-check-input" type="radio" name="condensing" id="condenboth"
+                                    value="condenboth">
                                 <label class="form-check-label" for="condensing3">
                                     Both
                                 </label>
@@ -273,11 +273,15 @@
                                     The heater should be set at the temperature required to met the hot water demand.
                                     It multiple temperatures are</p>
                             </div>
-                            <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <form>
-                                    <input type="number" id="number" value="120" class="form-control" />
+                                    <input type="number" id="number" value="120" class="form-control">
                                 </form>
                             </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1">
+                                <p>&#8457</p>
+                            </div>
+
                         </div>
                     </div>
                     <!--Grid column-->
@@ -295,10 +299,14 @@
                                 </p>
                             </div>
 
-                            <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+                            <div class="col-sm-3 col-md-3 col-lg-3 form-group">
                                 <form>
                                     <input type="number" id="groundTemp" value="120" class="form-control" />
                                 </form>
+                            </div>
+
+                            <div class="col-sm-1 col-md-1 col-lg-1">
+                                <p>&#8457</p>
                             </div>
                         </div>
                     </div>

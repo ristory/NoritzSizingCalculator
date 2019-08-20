@@ -1,21 +1,8 @@
-let url = "https://compare.noritz.com/api/models/NRC711-DV"
-let url2 = "zipcode.xlsx";
 let api;
+let url2 = "zipcode.xlsx";
+let heatertype;
 let groundTemp;
-
-
-fetch(url)
-  .then(function (r) {
-    return r.json()
-  })
-  .then(function (data) {
-    console.log(data)
-    //console.log(JSON.stringify(data));
-  })
-  .catch(function (e) {
-    console.error(e)
-  })
-
+let model = [];
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -43,6 +30,46 @@ function application() {
   for (let i = 0; i < z.length; i++) {
     z[i].style.display = "flex";
   }
+}
+
+function condensing() {
+  var radios = document.getElementsByName('condensing');
+
+  for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+      heatertype = radios[i].value;
+      break;
+    }
+  }
+
+  if( heatertype === condensing)
+  {
+    model.push("GQ-C3259WX-FF US (EZ111) (EZTR75)","")
+  }
+
+  else if( heatertype === noncondensing)
+  {
+    model.push("GQ-C3259WX-FF US (EZ111) (EZTR75)","")
+  }
+
+  else if( heatertype === condenboth)
+  {
+    model.push("GQ-C3259WX-FF US (EZ111) (EZTR75)","")
+  }
+
+  let model;
+  let url = "https://compare.noritz.com/api/models/" + model[0]
+  fetch(url)
+    .then(function (r) {
+      return r.json()
+    })
+    .then(function (data) {
+      api = data;
+      //console.log(JSON.stringify(data));
+    })
+    .catch(function (e) {
+      console.error(e)
+    })
 }
 
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
@@ -88,7 +115,7 @@ $("#bootstrapForm").submit(function (event) {
       document.querySelector(".hidden2").style.display = "block";
       document.querySelector(".next").disabled = true;
       application();
-
+      condensing();
       /* set up async GET request */
       let req = new XMLHttpRequest();
       req.open("GET", url2, true);

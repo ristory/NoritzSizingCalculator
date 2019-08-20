@@ -37,6 +37,11 @@ hr
    background-size: cover;
  }
 
+ .col-sm-1
+ {
+    font-size: 30px;
+ }
+
 .first,.second,.third
 {
    background-color:	#696969;
