@@ -17,6 +17,9 @@ function closeNav() {
 document.querySelector(".reset").addEventListener("click", reset1);
 function reset1() {
   document.querySelector("#bootstrapForm").reset();
+  document.querySelector(".next").disabled = false;
+  document.getElementById("groundTemp").value = 120;
+  hideFixture();
 }
 
 $(function () {
@@ -52,34 +55,31 @@ function condensing() {
     }
   }
   function filterLocation(b) {
-    console.log(b)
-    if (b === indoor) {
+    if (b === "indoor") {
       model.push("a")
     }
 
-    else if (b === outdoor) {
+    else if (b === "outdoor") {
       model.push("b")
     }
 
-    else if (b === inoutboth) {
+    else if (b === "inoutboth") {
       model.push("c")
     }
 
   }
   function filterHeater(a) {
-
-    if (a == condensing) {
-      console.log("asdfd")
+    if (a === "condensing") {
       filterLocation(locate);
     }
 
-    // else if (a === noncondensing) {
-    //   filterLocation(locate)
-    // }
+    else if (a === "noncondensing") {
+      filterLocation(locate)
+    }
 
-    // else if (a === condenboth) {
-    //   filterLocation(locate)
-    // }
+    else if (a === "condenboth") {
+      filterLocation(locate)
+    }
   }
 filterHeater(heatertype)
 console.log(model)
@@ -102,21 +102,18 @@ console.log(model)
 
 //document.querySelector(".fixturecolumn1").addEventListener("click", showFixture1);
 
-function hideFixture1() {
+function hideFixture() {
   let x = document.getElementsByClassName("fixturecolumn1")
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-}
-hideFixture1();
 
-function hideFixture2() {
-  let x = document.getElementsByClassName("fixturecolumn2")
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  let y = document.getElementsByClassName("fixturecolumn2")
+  for (let i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
   }
 }
-hideFixture2();
+hideFixture();
 
 // document.querySelector(".next").addEventListener("click", showStep2);
 
