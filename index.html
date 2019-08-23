@@ -956,7 +956,7 @@
                         <!--Content-->
                         <div class="p-4">
 
-                            <h1 class="font-weight-bold">NCC199CDV</h1>
+                            <h1 class="font-weight-bold" id="model1">NCC199CDV</h1>
 
                             <p class="lead font-weight-bold">Description</p>
 
@@ -997,8 +997,7 @@
                         <p>System Controller(SC-201)</p>
                         <p>Osilation Valve (IK_WV)</p>
 
-                        <button type="button" class="btn btn-danger">GET EXCEL REPORT
-
+                        <button type="button" class="btn btn-danger" onClick="document.getElementById('report').scrollIntoView();" value = "">GET EXCEL REPORT
                         </button>
                     </div>
 
@@ -1019,7 +1018,7 @@
                         <!--Content-->
                         <div class="p-4">
 
-                            <h1 class="font-weight-bold">NCC199CDV</h1>
+                            <h1 class="font-weight-bold" id="model2">NCC199CDV</h1>
 
                             <p class="lead font-weight-bold">Description</p>
 
@@ -1060,7 +1059,7 @@
                         <p>System Controller(SC-201)</p>
                         <p>Osilation Valve (IK_WV)</p>
 
-                        <button type="button" class="btn btn-danger">GET EXCEL REPORT
+                        <button type="button" class="btn btn-danger" onClick="document.getElementById('middle').scrollIntoView();" value = "">GET EXCEL REPORT
 
                         </button>
                     </div>
@@ -1077,6 +1076,7 @@
     </div>
     <h1 class="banner text-center">GET STARTED TODAY</h1>
     <br>
+    <div id = "report">
     <form>
         <div class="form-group row finalreport">
             <label for="project" class="col-sm-2 col-md-2 col-lg-2 col-form-label"><strong>Project
@@ -1126,9 +1126,11 @@
             <label class="form-check-label" for="exampleCheck1">Please have an engineer contact me</label>
         </div>
     </form>
+    
     <div class="container-fluid text-center">
         <button type="button" class="btn btn-danger">SUBMIT</button>
     </div>
+</div>
     <br>
     <br>
     <div class="jumbotron jumbotron-fluid bg-danger">

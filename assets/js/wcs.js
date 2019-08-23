@@ -4,6 +4,13 @@ let heatertype;
 let locate;
 let groundTemp;
 let model = [];
+let NCC199CDV = ["NCC199CDV","GQ-C3259WZ-FF US", "18000", "199900", "96", "11.1"]
+let NCC199DVC = ["NCC199DVC","GQ-2857WZ-FFA US", "18000", "199900", "84", "9.8"]
+let NC199OD = ["NC199OD","GQ-2857WZ US", "11000", "199900", "84", "9.8"]
+let NCC300OD = ["NCC300OD","GQ-C5032WZ-FF US", "15000", "300000", "97", "13.2"]
+let NCC300DV = ["NCC300DV","GQ-C3259WZ-FF US", "18000", "199900", "97", "13.2"]
+let NC380 = ["NC380-SV-ASME","NC380-SV-ASME", "22500", "380000", "80", "13.2"]
+
 
 
 function openNav() {
@@ -56,7 +63,7 @@ function condensing() {
   }
   function filterLocation(b) {
     if (b === "indoor") {
-      model.push("a")
+      document.getElementById("model1").innerHTML=""
     }
 
     else if (b === "outdoor") {
@@ -83,8 +90,6 @@ function condensing() {
   }
 filterHeater(heatertype)
 console.log(model)
-
-
 
   // let url = "https://compare.noritz.com/api/models/" + model[0]
   // fetch(url)
