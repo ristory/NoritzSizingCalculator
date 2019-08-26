@@ -44,6 +44,8 @@ function application() {
   }
 }
 
+
+
 function condensing() {
   let radios = document.getElementsByName('condensing');
   let radios1 = document.getElementsByName('location');
@@ -63,7 +65,13 @@ function condensing() {
   }
   function filterLocation(b) {
     if (b === "indoor") {
-      document.getElementById("model1").innerHTML=""
+      document.getElementsByClassName("model1").innerHTML= NCC199CDV[0]
+      document.getElementById("modelNumber1").innerHTML= NCC199CDV[1]
+      document.getElementById("efficiency1").innerHTML= NCC199CDV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML= "MINIMUM " + NCC199CDV[2] + " TO MAX "  + NCC199CDV[3] + " BTUH"
+      document.getElementById("minBtu").innerHTML= NCC199CDV[2]
+      document.getElementById("maxBtu").innerHTML= NCC199CDV[3]
+      document.getElementById("maxFlow").innerHTML= NCC199CDV[5]
     }
 
     else if (b === "outdoor") {
