@@ -9,7 +9,7 @@ let NCC199DVC = ["NCC199DVC", "GQ-2857WZ-FFA US", "18000", "199900", "84", "9.8"
 let NC199OD = ["NC199OD", "GQ-2857WZ US", "11000", "199900", "84", "9.8"]
 let NCC300OD = ["NCC300OD", "GQ-C5032WZ-FF US", "15000", "300000", "97", "13.2"]
 let NCC300DV = ["NCC300DV", "GQ-C3259WZ-FF US", "18000", "199900", "97", "13.2"]
-let NC380 = ["NC380-SV-ASME", "NC380-SV-ASME", "22500", "380000", "80", "13.2"]
+let NC380SV = ["NC380-SV-ASME", "NC380-SV-ASME", "22500", "380000", "80", "13.2"]
 
 
 
@@ -61,7 +61,7 @@ function condensing() {
       break;
     }
   }
-  function filterLocation(b) {
+  function filterLocation1(b) {
     if (b === "indoor") {
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
@@ -134,17 +134,174 @@ function condensing() {
     }
 
   }
+
+  function filterLocation2(b) {
+    if (b === "indoor") {
+      document.getElementById("model11").innerHTML = NCC199DVC[0]
+      document.getElementById("model12").innerHTML = NCC199DVC[0]
+      document.getElementById("modelNumber1").innerHTML = NCC199DVC[1]
+      document.getElementById("efficiency1").innerHTML = NCC199DVC[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NCC199DVC[2] + " TO MAX " + NCC199DVC[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NCC199DVC[2]
+      document.getElementById("maxBtu1").innerHTML = NCC199DVC[3]
+      document.getElementById("maxFlow1").innerHTML = NCC199DVC[5]
+
+      document.getElementById("model21").innerHTML = NC380SV[0]
+      document.getElementById("model22").innerHTML = NC380SV[0]
+      document.getElementById("modelNumber2").innerHTML = NC380SV[1]
+      document.getElementById("efficiency2").innerHTML = NC380SV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NC380SV[2] + " TO MAX " + NC380SV[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NC380SV[2]
+      document.getElementById("maxBtu2").innerHTML = NC380SV[3]
+      document.getElementById("maxFlow2").innerHTML = NC380SV[5]
+    }
+
+    else if (b === "outdoor") {
+
+      document.getElementById("model11").innerHTML = NC199OD[0]
+      document.getElementById("model12").innerHTML = NC199OD[0]
+      document.getElementById("modelNumber1").innerHTML = NC199OD[1]
+      document.getElementById("efficiency1").innerHTML = NC199OD[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NC199OD[2] + " TO MAX " + NC199OD[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NC199OD[2]
+      document.getElementById("maxBtu1").innerHTML = NC199OD[3]
+      document.getElementById("maxFlow1").innerHTML = NC199OD[5]
+
+      document.getElementById("model21").innerHTML = NC380SV[0]
+      document.getElementById("model22").innerHTML = NC380SV[0]
+      document.getElementById("modelNumber2").innerHTML = NC380SV[1]
+      document.getElementById("efficiency2").innerHTML = NC380SV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NC380SV[2] + " TO MAX " + NC380SV[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NC380SV[2]
+      document.getElementById("maxBtu2").innerHTML = NC380SV[3]
+      document.getElementById("maxFlow2").innerHTML = NC380SV[5]
+    }
+
+
+    else if (b === "inoutboth") {
+      document.getElementById("model11").innerHTML = NCC199DVC[0]
+      document.getElementById("model12").innerHTML = NCC199DVC[0]
+      document.getElementById("modelNumber1").innerHTML = NCC199DVC[1]
+      document.getElementById("efficiency1").innerHTML = NCC199DVC[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NCC199DVC[2] + " TO MAX " + NCC199DVC[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NCC199DVC[2]
+      document.getElementById("maxBtu1").innerHTML = NCC199DVC[3]
+      document.getElementById("maxFlow1").innerHTML = NCC199DVC[5]
+
+      document.getElementById("model21").innerHTML = NC199OD[0]
+      document.getElementById("model22").innerHTML = NC199OD[0]
+      document.getElementById("modelNumber2").innerHTML = NC199OD[1]
+      document.getElementById("efficiency2").innerHTML = NC199OD[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NC199OD[2] + " TO MAX " + NC199OD[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NC199OD[2]
+      document.getElementById("maxBtu2").innerHTML = NC199OD[3]
+      document.getElementById("maxFlow2").innerHTML = NC199OD[5]
+
+      document.getElementById("model31").innerHTML = NC380SV[0]
+      document.getElementById("model32").innerHTML = NC380SV[0]
+      document.getElementById("modelNumber3").innerHTML = NC380SV[1]
+      document.getElementById("efficiency3").innerHTML = NC380SV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax3").innerHTML = "MINIMUM " + NC380SV[2] + " TO MAX " + NC380SV[3] + " BTUH"
+      document.getElementById("minBtu3").innerHTML = NC380SV[2]
+      document.getElementById("maxBtu3").innerHTML = NC380SV[3]
+      document.getElementById("maxFlow3").innerHTML = NC380SV[5]
+    }
+
+  }
+
+  function filterLocation3(b) {
+    if (b === "indoor") {
+      document.getElementById("model11").innerHTML = NCC199CDV[0]
+      document.getElementById("model12").innerHTML = NCC199CDV[0]
+      document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
+      document.getElementById("efficiency1").innerHTML = NCC199CDV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NCC199CDV[2] + " TO MAX " + NCC199CDV[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NCC199CDV[2]
+      document.getElementById("maxBtu1").innerHTML = NCC199CDV[3]
+      document.getElementById("maxFlow1").innerHTML = NCC199CDV[5]
+
+      document.getElementById("model21").innerHTML = NCC300DV[0]
+      document.getElementById("model22").innerHTML = NCC300DV[0]
+      document.getElementById("modelNumber2").innerHTML = NCC300DV[1]
+      document.getElementById("efficiency2").innerHTML = NCC300DV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NCC300DV[2] + " TO MAX " + NCC300DV[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NCC300DV[2]
+      document.getElementById("maxBtu2").innerHTML = NCC300DV[3]
+      document.getElementById("maxFlow2").innerHTML = NCC300DV[5]
+    }
+
+    else if (b === "outdoor") {
+
+      document.getElementById("model11").innerHTML = NCC199CDV[0]
+      document.getElementById("model12").innerHTML = NCC199CDV[0]
+      document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
+      document.getElementById("efficiency1").innerHTML = NCC199CDV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NCC199CDV[2] + " TO MAX " + NCC199CDV[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NCC199CDV[2]
+      document.getElementById("maxBtu1").innerHTML = NCC199CDV[3]
+      document.getElementById("maxFlow1").innerHTML = NCC199CDV[5]
+
+      document.getElementById("model21").innerHTML = NCC300OD[0]
+      document.getElementById("model22").innerHTML = NCC300OD[0]
+      document.getElementById("modelNumber2").innerHTML = NCC300OD[1]
+      document.getElementById("efficiency2").innerHTML = NCC300OD[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NCC300OD[2] + " TO MAX " + NCC300OD[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NCC300OD[2]
+      document.getElementById("maxBtu2").innerHTML = NCC300OD[3]
+      document.getElementById("maxFlow2").innerHTML = NCC300OD[5]
+    }
+
+
+    else if (b === "inoutboth") {
+      document.getElementById("model11").innerHTML = NCC199CDV[0]
+      document.getElementById("model12").innerHTML = NCC199CDV[0]
+      document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
+      document.getElementById("efficiency1").innerHTML = NCC199CDV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax1").innerHTML = "MINIMUM " + NCC199CDV[2] + " TO MAX " + NCC199CDV[3] + " BTUH"
+      document.getElementById("minBtu1").innerHTML = NCC199CDV[2]
+      document.getElementById("maxBtu1").innerHTML = NCC199CDV[3]
+      document.getElementById("maxFlow1").innerHTML = NCC199CDV[5]
+
+      document.getElementById("model21").innerHTML = NCC300DV[0]
+      document.getElementById("model22").innerHTML = NCC300DV[0]
+      document.getElementById("modelNumber2").innerHTML = NCC300DV[1]
+      document.getElementById("efficiency2").innerHTML = NCC300DV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax2").innerHTML = "MINIMUM " + NCC300DV[2] + " TO MAX " + NCC300DV[3] + " BTUH"
+      document.getElementById("minBtu2").innerHTML = NCC300DV[2]
+      document.getElementById("maxBtu2").innerHTML = NCC300DV[3]
+      document.getElementById("maxFlow2").innerHTML = NCC300DV[5]
+
+      document.getElementById("model31").innerHTML = NCC199DVC[0]
+      document.getElementById("model32").innerHTML = NCC199DVC[0]
+      document.getElementById("modelNumber3").innerHTML = NCC199DVC[1]
+      document.getElementById("efficiency3").innerHTML = NCC199DVC[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax3").innerHTML = "MINIMUM " + NCC199DVC[2] + " TO MAX " + NCC199DVC[3] + " BTUH"
+      document.getElementById("minBtu3").innerHTML = NCC199DVC[2]
+      document.getElementById("maxBtu3").innerHTML = NCC199DVC[3]
+      document.getElementById("maxFlow3").innerHTML = NCC199DVC[5]
+
+      document.getElementById("model41").innerHTML = NC380SV[0]
+      document.getElementById("model42").innerHTML = NC380SV[0]
+      document.getElementById("modelNumber4").innerHTML = NC380SV[1]
+      document.getElementById("efficiency4").innerHTML = NC380SV[4] + " PERCENT EFFICIENCY"
+      document.getElementById("minMax4").innerHTML = "MINIMUM " + NC380SV[2] + " TO MAX " + NC380SV[3] + " BTUH"
+      document.getElementById("minBtu4").innerHTML = NC380SV[2]
+      document.getElementById("maxBtu4").innerHTML = NC380SV[3]
+      document.getElementById("maxFlow4").innerHTML = NC380SV[5]
+    }
+
+  }
   function filterHeater(a) {
     if (a === "condensing") {
-      filterLocation(locate);
+      filterLocation1(locate);
     }
 
     else if (a === "noncondensing") {
-      filterLocation(locate)
+      filterLocation2(locate)
     }
 
     else if (a === "condenboth") {
-      filterLocation(locate)
+      filterLocation3(locate)
     }
   }
   filterHeater(heatertype)
