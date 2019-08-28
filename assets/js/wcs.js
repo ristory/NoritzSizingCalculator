@@ -63,6 +63,9 @@ function condensing() {
   }
   function filterLocation1(b) {
     if (b === "indoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
       document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
@@ -83,6 +86,8 @@ function condensing() {
     }
 
     else if (b === "outdoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
 
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
@@ -105,6 +110,10 @@ function condensing() {
 
 
     else if (b === "inoutboth") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+      document.querySelector(".recommend3").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
       document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
@@ -137,6 +146,9 @@ function condensing() {
 
   function filterLocation2(b) {
     if (b === "indoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199DVC[0]
       document.getElementById("model12").innerHTML = NCC199DVC[0]
       document.getElementById("modelNumber1").innerHTML = NCC199DVC[1]
@@ -157,6 +169,8 @@ function condensing() {
     }
 
     else if (b === "outdoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
 
       document.getElementById("model11").innerHTML = NC199OD[0]
       document.getElementById("model12").innerHTML = NC199OD[0]
@@ -179,6 +193,10 @@ function condensing() {
 
 
     else if (b === "inoutboth") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+      document.querySelector(".recommend3").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199DVC[0]
       document.getElementById("model12").innerHTML = NCC199DVC[0]
       document.getElementById("modelNumber1").innerHTML = NCC199DVC[1]
@@ -211,6 +229,11 @@ function condensing() {
 
   function filterLocation3(b) {
     if (b === "indoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+      document.querySelector(".recommend3").style.display = "flex";
+      document.querySelector(".recommend4").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
       document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
@@ -249,6 +272,10 @@ function condensing() {
     }
 
     else if (b === "outdoor") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+      document.querySelector(".recommend3").style.display = "flex";
+      document.querySelector(".recommend4").style.display = "flex";
 
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
@@ -289,6 +316,13 @@ function condensing() {
 
 
     else if (b === "inoutboth") {
+      document.querySelector(".recommend1").style.display = "flex";
+      document.querySelector(".recommend2").style.display = "flex";
+      document.querySelector(".recommend3").style.display = "flex";
+      document.querySelector(".recommend4").style.display = "flex";
+      document.querySelector(".recommend5").style.display = "flex";
+      document.querySelector(".recommend6").style.display = "flex";
+
       document.getElementById("model11").innerHTML = NCC199CDV[0]
       document.getElementById("model12").innerHTML = NCC199CDV[0]
       document.getElementById("modelNumber1").innerHTML = NCC199CDV[1]
@@ -342,8 +376,7 @@ function condensing() {
       document.getElementById("minBtu6").innerHTML = NC380SV[2]
       document.getElementById("maxBtu6").innerHTML = NC380SV[3]
       document.getElementById("maxFlow6").innerHTML = NC380SV[5]
-
-      
+    
     }
 
   }
@@ -390,19 +423,28 @@ function hideFixture() {
     y[i].style.display = "none";
   }
 }
-hideFixture();
 
 // document.querySelector(".next").addEventListener("click", showStep2);
 
-// function showStep2()
+// function hiddenStep2()
 // {
 //   document.querySelector(".hidden2").style.display = "none";
 // }
 
-// function showStep3()
-// {
-//   document.querySelector(".hidden3").style.display = "none";
-// }
+function hiddenStep3()
+{
+  //document.querySelector(".hidden3").style.display = "none";
+  document.querySelector(".recommend1").style.display = "none";
+  document.querySelector(".recommend2").style.display = "none";
+  document.querySelector(".recommend3").style.display = "none";
+  document.querySelector(".recommend4").style.display = "none";
+  document.querySelector(".recommend5").style.display = "none";
+  document.querySelector(".recommend6").style.display = "none";
+}
+
+hideFixture();
+hiddenStep3();
+
 $("#bootstrapForm").submit(function (event) {
   event.preventDefault();
   // make selected form letiable
