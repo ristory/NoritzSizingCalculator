@@ -263,6 +263,19 @@ color: white;
    }
 }
 
+@media screen and (max-width: 1540px) {
+   #model11,#model21,#model31,#model41,#model51,#model61
+   {
+      letter-spacing: 0px;
+
+   }
+   .title
+   {
+      font-size: 30px;
+      letter-spacing: 0px;
+   }
+}
+
    
 
 
