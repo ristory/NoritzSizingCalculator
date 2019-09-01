@@ -490,3 +490,19 @@ $("#bootstrapForm").submit(function (event) {
   vForm.addClass('was-validated');
 
 });
+
+
+$("#bootstrapForm1").submit(function (event) {
+  event.preventDefault();
+  // make selected form letiable
+  let vForm = $(this);
+  if (vForm[0].checkValidity() === false) {
+    event.preventDefault()
+    event.stopPropagation()
+  } else {
+    event.preventDefault()
+        
+      }
+  vForm.addClass('was-validated');
+
+});
