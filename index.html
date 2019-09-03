@@ -1348,8 +1348,8 @@
             <div class="form-group row finalreport">
                 <label for="company" class="col-sm-2 col-md-2 col-lg-2 col-form-label"><strong>Company:</strong></label>
                 <div class="col-sm-5 col-md-5 col-lg-5">
-                        <input type="password" class="form-control" id="company">
-                    </div>
+                    <input type="password" class="form-control" id="company">
+                </div>
             </div>
 
             <div class="form-group row finalreport">
@@ -1364,7 +1364,8 @@
                 <label for="email" class="col-sm-2 col-md-2 col-lg-2 col-form-label"><strong>Email
                         Address:</strong></label>
                 <div class="col-sm-5 col-md-5 col-lg-5">
-                    <input type="emnail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" id="email" required>
+                    <input type="emnail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control"
+                        id="email" required>
                     <div class="invalid-feedback">Please enter the right email format</div>
                 </div>
             </div>
@@ -1465,6 +1466,13 @@
     <script type="text/javascript" src="./assets/js/xlsx.full.min.js"></script>
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="./assets/js/wcs.js"></script>
+    <!-- Email API-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_VyRSz2eOJcljYZE2Ytbuo");
+        })();
+    </script>
     </div>
 </body>
 
