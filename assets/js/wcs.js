@@ -426,13 +426,13 @@ window.onload = function () {
 
   // document.querySelector(".next").addEventListener("click", showStep2);
 
-  // function hiddenStep2()
-  // {
-  //   document.querySelector(".hidden2").style.display = "none";
-  // }
+  function hiddenStep2()
+  {
+    document.querySelector(".hidden2").style.display = "none";
+  }
 
   function hiddenStep3() {
-    //document.querySelector(".hidden3").style.display = "none";
+    document.querySelector(".hidden3").style.display = "none";
     document.querySelector(".recommend1").style.display = "none";
     document.querySelector(".recommend2").style.display = "none";
     document.querySelector(".recommend3").style.display = "none";
@@ -442,7 +442,16 @@ window.onload = function () {
   }
 
   hideFixture();
+  hiddenStep2()
   hiddenStep3();
+
+  document.querySelector("#calculate").addEventListener("click", calculate);
+  function calculate()
+  {
+    event.preventDefault();
+    alert("asdds")
+    document.querySelector(".hidden3").style.display = "block";
+  }
 
   $("#bootstrapForm").submit(function (event) {
     event.preventDefault();
