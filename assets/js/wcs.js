@@ -483,8 +483,6 @@ window.onload = function () {
         }
         req.send();
 
-        //this.contact_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm('hoangcao-email', 'test_report1', this);
       }
 
     }
