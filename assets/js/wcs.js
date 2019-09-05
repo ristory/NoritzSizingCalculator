@@ -442,8 +442,8 @@ window.onload = function () {
   }
 
   hideFixture();
-  hiddenStep2()
-  hiddenStep3();
+  //hiddenStep2()
+  //hiddenStep3();
 
   document.querySelector("#calculate").addEventListener("click", calculate);
   function calculate()
