@@ -449,7 +449,6 @@ window.onload = function () {
   function calculate()
   {
     event.preventDefault();
-    alert("asdds")
     document.querySelector(".hidden3").style.display = "block";
   }
 
