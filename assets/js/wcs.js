@@ -61,6 +61,28 @@ window.onload = function () {
         break;
       }
     }
+    
+    document.getElementById("excelReport").click( function () {
+      let workbook1 = XLSC.utils.book_new();
+      workbook1.Props = {
+        Title: "Noritz Tankless Heater",
+        Subject: "Noritz Heater Recommendation",
+        Author: "Noritz America"
+      };
+      workbook1.SheetNames.push("Report Heater");
+      let ws_data = [["hello", "world"]]
+      let ws = XLSX.utils.aoa_to_sheet(ws_data);
+      workbook1.Sheets["Report Heater"] = ws;
+      let wbout = XLSX.write(wb, { bookType: "xlsx", type: "binary" });
+      function s2ab(s) {
+        var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
+        var view = new Uint8Array(buf);  //create uint8array as viewer
+        for (var i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xFF; //convert to octet
+        return buf;
+      }
+    })
+
+
     function filterLocation1(b) {
       if (b === "indoor") {
         document.querySelector(".recommend1").style.display = "flex";
@@ -426,8 +448,7 @@ window.onload = function () {
 
   // document.querySelector(".next").addEventListener("click", showStep2);
 
-  function hiddenStep2()
-  {
+  function hiddenStep2() {
     document.querySelector(".hidden2").style.display = "none";
   }
 
@@ -446,8 +467,7 @@ window.onload = function () {
   //hiddenStep3();
 
   document.querySelector("#calculate").addEventListener("click", calculate);
-  function calculate()
-  {
+  function calculate() {
     event.preventDefault();
     document.querySelector(".hidden3").style.display = "block";
   }
